@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Wereldwijde Valutas</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+  html, body, #map-canvas {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  </style>
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+  <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+
+<body>
+
+  <div class="menubar">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8">
+           <h1>Wereldwijde valuta's</h1>
+        </div>
+        <div class="col-xs-4">
+           <a href="#" id="menuknop">Uitleg en informatie</a>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+
+
+
+  <div class="uitleginfo">
+    <span class="sluiten2">X</span>
+    <p>
+      Door een van de markers op de kaart te selecteren verschijnt een informatiescherm met informatie over de valuta van de desbetreffende locatie. Het venster kan gesloten worden door op het kruisje te klikken. Ook is het mogelijk het venster te verplaatsen door de muis op het venster te plaatsen en deze te verslepen.<br><br>
+      <b>De valuta zijn voor het laatst geupdate op:<br><span class="updated"></span></b><br><br>
+      Wereldwijde Valuta's is een project van Dennis Passway. Het project draait op de Google Maps API en op de API van openexchangerates.org.<br><br>
+
+      De pins zijn mogelijk niet zichtbaar in Firefox. Dit is een bekende fout in Firefox waar tot nu toe niets aan gedaan kan worden. Voor informatie: <a href="https://support.mozilla.org/en-US/questions/900503" target="blank">Firefox support forum</a>.
+    </p>
+  </div>
+
+
+
+  <div class="infobar">
+    <span class="sluiten">X</span>
+
+    <img id="landafbeelding">
+
+    <h2 class="land"></h2>
+
+    In <span class="land"></span> wordt betaald met de <span class="valuta"></span>.
+    <br><br>
+    
+    <span class="een">1 Euro</span><br>
+    staat gelijk aan<br>
+    <span class="omgerekend"></span><br>
+    <span class="valuta"></span>.
+    
+  </div>
+
+  <div id="map-canvas"></div>
+
+  <script src="js/vendor/jquery-1.10.1.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script> 
+  <script src="js/main.js"></script>
+</body>
+</html>
